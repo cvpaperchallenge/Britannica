@@ -3,6 +3,7 @@ layout: cover
 highlighter: shiki
 fonts:
   mono: 'Fira Mono'
+download: true
 info: |
   ## Poetry 101
 
@@ -42,7 +43,7 @@ layout: 'default'
 
 - How Poetry work?
 
-- Frequently used commands
+- Frequent commands
 
 - Dependency specification
 
@@ -51,7 +52,7 @@ layout: 'default'
 </div>
 
 ---
-name: what is poetry?
+name: 'what is poetry?'
 ---
 
 ## What is Poetry?
@@ -134,12 +135,12 @@ name: 'how poetry work?'
 
 
 ---
-name: 'frequently used commands'
+name: 'frequent commands'
 layout: 'iframe-right'
 url: https://python-poetry.org/
 ---
 
-## Frequently used commands
+## Frequent commands
 
 - example commands:
 
@@ -153,10 +154,10 @@ url: https://python-poetry.org/
 - For detail please check [offical docs](https://python-poetry.org/docs/cli/).
 
 ---
-name: frequently_used_commands_install
+name: 'frequent commands: install'
 ---
 
-## Frequently used commands
+## Frequent commands
 
 <br>
 
@@ -185,10 +186,10 @@ $ poetry install --no-dev
 </div>
 
 ---
-name: frequently_used_commands_add
+name: 'frequent commands: add'
 ---
 
-## Frequently used commands
+## Frequent commands
 
 <br>
 
@@ -232,10 +233,10 @@ $ poetry add ./my-package/
 </div>
 
 ---
-name: frequently_used_commands_update
+name: 'frequent commands: update'
 ---
 
-## Frequently used commands
+## Frequent commands
 
 <br>
 
@@ -266,10 +267,10 @@ $ poetry update numpy
 </div>
 
 ---
-name: frequently_used_commands_remove
+name: 'frequent commands: remove'
 ---
 
-## Frequently used commands
+## Frequent commands
 
 <br>
 
@@ -294,10 +295,10 @@ $ poetry remove numpy
 </div>
 
 ---
-name: frequently_used_commands_run
+name: 'frequent commands: run'
 ---
 
-## Frequently used commands
+## Frequent commands
 
 <br>
 
@@ -328,10 +329,10 @@ $ poetry run black src
 </div>
 
 ---
-name: frequently_used_commands_show
+name: 'frequent commands: show'
 ---
 
-## Frequently used commands
+## Frequent commands
 
 <br>
 
@@ -362,7 +363,7 @@ $ poetry show --latest
 </div>
 
 ---
-name: 'off-topic: python module/package/library '
+name: 'off-topic: python module/package/library'
 ---
 
 ## Off-topic
@@ -396,7 +397,7 @@ name: 'off-topic: semantic versioning'
 - `z` is called the **patch version**, and is incremented when a bug fix with backward compatibility is made.
 
 ---
-name: dependency_specification_caret_requirements
+name: 'dependency specification: caret requirements'
 ---
 
 ## Dependency specification
@@ -422,7 +423,7 @@ name: dependency_specification_caret_requirements
 | `^0.0.3` | `>=0.0.3,<0.0.4` |
 
 ---
-name: dependency_specification_tilde_requirements
+name: 'dependency specification: tilde requirements'
 ---
 
 ## Dependency specification
@@ -449,7 +450,7 @@ name: dependency_specification_tilde_requirements
 | `~1`     | `>=1.0.0,<2.0.0` |
 
 ---
-name: frequently_faced_error_solver_problem_error_1
+name: 'frequently faced error: solver_problem_error 1'
 ---
 
 ## Frequently faced error
@@ -488,7 +489,7 @@ Resolving dependencies... (0.4s)
 </div>
 
 ---
-name: frequently_faced_error_solver_problem_error_2
+name: 'frequently faced error: solver_problem_error 2'
 ---
 
 ## Frequently faced error
