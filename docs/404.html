@@ -3,8 +3,10 @@
 <head>
   <script>
     sessionStorage.redirect = location.href;
+    const targetPathname = location.pathname.split('/').slice(0,-1).join('/');
+    const targetHref = "'" + location.origin + targetPathname + "'";
+    document.write('<meta http-equiv="refresh" content="5;URL=' + targetHref + '"></meta>');
   </script>
-  <meta http-equiv="refresh" content="5;URL='https://cvpaperchallenge.github.io/Britannica/poetry101/en/'"></meta>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="https://cdn.jsdelivr.net/gh/slidevjs/slidev/assets/favicon.png">
