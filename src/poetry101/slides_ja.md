@@ -1,19 +1,17 @@
 ---
 layout: cover
-download: 'https://antfu.me/talks/2021-04-29'
+download: true
 highlighter: shiki
 fonts:
   mono: 'Fira Mono'
 info: |
-  ## Composable Vue
+  ## Poetry 101
 
-  Pattens and tips for writing good composable logic in Vue
+  Basics and stumbling points of Poetry
 
-  [Anthony Fu](https://antfu.me/) at [VueDay 2021](https://2021.vueday.it/)
+  [Yoshihiro Fukuhara](https://gatheluck.net/home/)
 
-  - [Recording](https://www.youtube.com/watch?v=IMJjP6edHd0)
-  - [Transcript](https://antfu.me/posts/composable-vue-vueday-2021)
-  - [Source code](https://github.com/antfu/talks/tree/master/2021-04-29)
+  - [Source code](https://github.com/cvpaperchallenge/Britannica/tree/master/src/poetry101/)
 ---
 
 # Poetry 101
@@ -28,7 +26,7 @@ Yoshihiro Fukuhara
   <img src="http://xpaperchallenge.org/_nuxt/img/fa53e31.png" class="h-8">
   <div class="ml-3 flex flex-col text-left">
     <div>cvpaper.challenge</div>
-    <div class="text-sm opacity-50">Apr. 29th, 2022</div>
+    <div class="text-sm opacity-50">May. 30th, 2022</div>
   </div>
 </div>
 
@@ -45,7 +43,7 @@ layout: 'default'
 
 - How Poetry work?
 
-- Frequently used commands
+- Frequent commands
 
 - Dependency specification
 
@@ -54,7 +52,7 @@ layout: 'default'
 </div>
 
 ---
-name: what is poetry?
+name: 'what is poetry?'
 ---
 
 ## What is Poetry?
@@ -107,7 +105,7 @@ Pythonパッケージの依存関係管理, パッケージ作成を行うため
 name: 'how poetry work?'
 ---
 
-## How Poetry work?
+## How Poetry work? <MarkerStumblingPoints />
 
 <v-clicks :every='1'>
 <div>
@@ -137,12 +135,12 @@ name: 'how poetry work?'
 
 
 ---
-name: 'frequently used commands'
+name: 'frequent commands'
 layout: 'iframe-right'
 url: https://python-poetry.org/
 ---
 
-## Frequently used commands
+## Frequent commands
 
 - 頻繁に使用するコマンド:
 
@@ -156,10 +154,10 @@ url: https://python-poetry.org/
 - 詳しい情報は[offical docs](https://python-poetry.org/docs/cli/)に記載がある.
 
 ---
-name: frequently_used_commands_install
+name: 'frequent commands: install'
 ---
 
-## Frequently used commands
+## Frequent commands
 
 <br>
 
@@ -188,19 +186,19 @@ $ poetry install --no-dev
 </div>
 
 ---
-name: frequently_used_commands_add
+name: 'frequent commands: add'
 ---
 
-## Frequently used commands
+## Frequent commands
 
 <br>
 
-### [add](https://python-poetry.org/docs/cli/#add)
+### [add](https://python-poetry.org/docs/cli/#add) <MarkerStumblingPoints />
 
 <div class="grid grid-cols-2 gap-x-4">
 <div class="pt-4">
 
-```shell {all|1-4|5-8|9-12|13-16|17-19|all}
+```shell {all|1-4|5-8|9-12|13-15|16-19|all}
 # numpyの最新のバージョンが更新可能要件を満たすかを確認し, 
 # もし満たしていればインストールする.
 $ poetry add numpy
@@ -236,10 +234,10 @@ $ poetry add ./my-package/
 </div>
 
 ---
-name: frequently_used_commands_update
+name: 'frequent commands: update'
 ---
 
-## Frequently used commands
+##  Frequent commands
 
 <br>
 
@@ -269,10 +267,10 @@ $ poetry update numpy
 </div>
 
 ---
-name: frequently_used_commands_remove
+name: 'frequent commands: remove'
 ---
 
-## Frequently used commands
+## Frequent commands
 
 <br>
 
@@ -297,10 +295,10 @@ $ poetry remove numpy
 </div>
 
 ---
-name: frequently_used_commands_run
+name: 'frequent commands: run'
 ---
 
-## Frequently used commands
+## Frequent commands
 
 <br>
 
@@ -330,10 +328,10 @@ $ poetry run black src
 </div>
 
 ---
-name: frequently_used_commands_show
+name: 'frequent commands: show'
 ---
 
-## Frequently used commands
+## Frequent commands
 
 <br>
 
@@ -364,7 +362,7 @@ $ poetry show --latest
 </div>
 
 ---
-name: off_topic_terminology
+name: 'off-topic: python module/package/library'
 ---
 
 ## Off-topic
@@ -380,7 +378,25 @@ name: off_topic_terminology
 - ライブラリ (library) の定義についてはPythonの公式ドキュメントには記載が無いと思われるが, [PyPI](https://pypi.org/)等に公開されているパッケージ, もしくはパッケージの集合を意味することが多い.
 
 ---
-name: dependency_specification_caret_requirements
+name: 'off-topic: semantic versioning'
+---
+
+## Off-topic
+
+<br>
+
+### [Semantic versioning](https://semver.org/)
+
+- ソフトウェアのバージョンを`x.y.z`の形で指定する.
+
+- `x`はメジャーバージョンと呼ばれ, APIの変更に互換性のない場合にインクリメントする.
+
+- `y`はマイナーバージョンと呼ばれ, 後方互換性があり機能性を追加した場合にインクリメントする.
+
+- `z`はパッチバージョンと呼ばれ, 後方互換性を伴うバグ修正をした場合にインクリメントする.
+
+---
+name: 'dependency specification: caret requirements'
 ---
 
 ## Dependency specification
@@ -406,7 +422,7 @@ name: dependency_specification_caret_requirements
 | `^0.0.3` | `>=0.0.3,<0.0.4` |
 
 ---
-name: dependency_specification_tilde_requirements
+name: 'dependency specification: tilde requirements'
 ---
 
 ## Dependency specification
@@ -433,14 +449,14 @@ name: dependency_specification_tilde_requirements
 | `~1`     | `>=1.0.0,<2.0.0` |
 
 ---
-name: frequently_faced_error_solver_problem_error_1
+name: 'frequently faced error: solver_problem_error 1'
 ---
 
 ## Frequently faced error
 
 <br>
 
-### SolverProblemError
+### SolverProblemError <MarkerStumblingPoints />
 
 <div class="grid grid-cols-2 gap-x-4">
 <div class="pt-4">
@@ -472,14 +488,14 @@ Resolving dependencies... (0.4s)
 </div>
 
 ---
-name: frequently_faced_error_solver_problem_error_2
+name: 'frequently faced error: solver_problem_error 2'
 ---
 
 ## Frequently faced error
 
 <br>
 
-### SolverProblemError
+### SolverProblemError <MarkerStumblingPoints />
 
 <div class="grid grid-cols-2 gap-x-4">
 <div class="pt-4">
