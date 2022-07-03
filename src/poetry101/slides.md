@@ -1,17 +1,17 @@
 ---
 layout: cover
+download: true
 highlighter: shiki
 fonts:
   mono: 'Fira Mono'
-download: true
 info: |
   ## Poetry 101
 
-  Basics and stumbling points of Poetry
+  Basics and stumbling points
 
   [Yoshihiro Fukuhara](https://gatheluck.net/home/)
 
-  - [Source code](https://github.com/cvpaperchallenge/Britannica/tree/master/src/poetry/)
+  - [Source code](https://github.com/cvpaperchallenge/Britannica/tree/master/src/poetry101/)
 ---
 
 # Poetry 101
