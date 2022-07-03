@@ -2,7 +2,7 @@
 
 This is source code of "Poetry 101: Basics and stumbling points" slides.
 The slides is created by OSS tool [slidev](https://sli.dev/).
-The built slides are accessible from https://cvpaperchallenge.github.io/Britannica/poetry/en/ (https://cvpaperchallenge.github.io/Britannica/poetry/ja/).
+The built slides are accessible from https://cvpaperchallenge.github.io/Britannica/poetry101/en/ (https://cvpaperchallenge.github.io/Britannica/poetry101/ja/).
 
 ## Open slides locally
 
