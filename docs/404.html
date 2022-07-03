@@ -5,7 +5,7 @@
     sessionStorage.redirect = location.href;
     const targetPathname = location.pathname.split('/').slice(0,-1).join('/');
     const targetHref = "'" + location.origin + targetPathname + "'";
-    document.write('<meta http-equiv="refresh" content="5;URL=' + targetHref + '"></meta>');
+    document.write('<meta http-equiv="refresh" content="0;URL=' + targetHref + '"></meta>');
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,10 +13,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Avenir+Next:wght@200;400;600&family=Nunito+Sans:wght@200;400;600&family=Fira+Mono:wght@200;400;600&display=swap" type="text/css">
 </head>
 <body>
-  <script>
-    document.write("<div>location.href:" + location.href + "</div>");
-    document.write("<div>location.origin:" + location.origin + "</div>")
-    document.write("<div>location.pathname:" + location.pathname + "</div>")
-  </script>
+  404 error<br>
+  Requested page is not found.
 </body>
 </html>
