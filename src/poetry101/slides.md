@@ -7,7 +7,7 @@ fonts:
 info: |
   ## Poetry 101
 
-  Basics and stumbling points of Poetry
+  Basics and stumbling points
 
   [Yoshihiro Fukuhara](https://gatheluck.net/home/)
 
