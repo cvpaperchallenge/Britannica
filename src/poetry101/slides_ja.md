@@ -2,6 +2,7 @@
 layout: cover
 download: true
 highlighter: shiki
+routerMode: hash
 fonts:
   mono: 'Fira Mono'
 info: |
